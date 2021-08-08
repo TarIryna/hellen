@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Galina-Syvak.github.io/profit-project-hellen",
+  "homepage": "https://github.com/TarIryna/hellen",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /profit-project-hellen/"
+    "build": "parcel build src/*.html --public-url /hellen/"
   },
   "repository": {
     "type": "git",
