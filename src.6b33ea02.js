@@ -7,4 +7,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/mobile-menu"),require("./js/modal");
 },{"./sass/main.scss":"clu1","./js/mobile-menu":"sByI","./js/modal":"RSqK"}]},{},["Focm"], null)
-//# sourceMappingURL=/profit-project-hellen/src.763c8187.js.map
+//# sourceMappingURL=/hellen/src.6b33ea02.js.map
