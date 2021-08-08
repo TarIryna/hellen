@@ -1,0 +1,110 @@
+.footer {
+  background-color: var(--third-bg-color);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--third-bg-color);
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    justify-content: start;
+    padding-top: 52px;
+    padding-bottom: 53px;
+  }
+}
+
+.footer__phone {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  font-family: var(--main-font-name);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: var(--secondary-bg-color);
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-right: 24px;
+    margin-left: auto;
+    padding-right: 24px;
+    line-height: 1.7;
+    border-right: 1px solid var(--third-txt-color);
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 220px;
+    font-size: 30px;
+    line-height: 1.3;
+  }
+}
+
+.footer__icon {
+  fill: var(--accent-color);
+  margin-right: 15px;
+
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 19px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    width: 24px;
+    height: 23px;
+    margin-right: 10px;
+  }
+}
+
+.footer__instagram {
+  margin-top: 30px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--third-bg-color);
+  background-image: url(../images/instagram-logo.svg);
+
+  @media screen and (min-width: 768px) {
+    justify-content: right;
+    margin-top: 0;
+  }
+}
+
+.copyright {
+  background-color: var(--secondary-bg-color);
+}
+
+.copyright__section {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.copyright__text {
+  font-family: var(--main-font-name);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  color: var(--third-txt-color);
+}

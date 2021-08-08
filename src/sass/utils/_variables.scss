@@ -1,0 +1,28 @@
+:root {
+  /* Набор основной цветовой гаммы фона и текста */
+  --accent-color: #ff6b09;
+  --accent-color-hovered: #eb6105;
+
+  --main-bg-color: #e5e5e5;
+  --secondary-bg-color: #111518;
+  --third-bg-color: #ffffff;
+  --fourth-bg-color: #f1f1f1;
+  --mobile-menu-bg-color: rgba(17, 21, 24, 0.9);
+
+  --main-txt-color: #111518;
+  --secondary-txt-color: #ffffff;
+  --third-txt-color: #b9b9b9;
+  --fourth-txt-color: #3d3d3d;
+
+  --icons-main-color: #000;
+  --icons-secondary-color: #fff;
+
+
+  /* Имена и семейство используемых шрифтов */
+  --main-font-name: 'Montserrat';
+  --main-font-family: sans-serif;
+
+  /* Параметры для использования трансфомации */
+  --delay: 250ms;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

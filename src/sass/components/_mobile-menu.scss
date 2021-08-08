@@ -1,0 +1,125 @@
+.mobile-menu {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--mobile-menu-bg-color);
+  transform: translateX(100%);
+  transition: transform var(--delay) var(--time-function);
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu__close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  transform: translate(-12px, 29px);
+
+  @media screen and(min-width: 768px) {
+    transform: translate(-36px, 44px);
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  width: 30px;
+  height: 30px;
+
+  color: var(--icons-secondary-color);
+  background-color: transparent;
+
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  transition: color var(--delay) var(--time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:focus {
+    outline: 1px dotted var(--icons-secondary-color);
+  }
+}
+
+.mobile-menu__button-icon {
+  stroke: currentColor;
+}
+
+.mobile-menu__icon-black--disable {
+  display: none;
+}
+
+.mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.mobile-menu__name-ru--white,
+.mobile-menu__name-en--white {
+  color: var(--secondary-txt-color);
+}
+
+.mobile-menu__navigation {
+  margin-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 72px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.mobile-menu__navigation-item {
+  &:not(:first-child) {
+    margin-top: 0;
+  }
+}
+
+.mobile-menu__navigation-link {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-txt-color);
+  transition: color var(--delay) var(--time-function);
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.808;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+// .mobile-menu__sign-button
+.mobile-menu__call-link {
+  margin: 64px auto 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

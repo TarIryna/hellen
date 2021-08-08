@@ -1,0 +1,138 @@
+.page-header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+
+  padding-top: 30px;
+  padding-bottom: 11px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 33px;
+    padding-bottom: 17px;
+  }
+
+  height: 70px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    height: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 120px;
+  }
+
+  background-color: var(--third-bg-color);
+}
+
+.page-header__icon-white--disable {
+  display: none;
+}
+
+.page-header__thumb {
+  display: flex;
+  align-items: baseline;
+}
+
+.page-header__navigation {
+  margin-left: 50px;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1680px) {
+    margin-left: 144px;
+  }
+}
+
+.page-header__navigation-list {
+  display: flex;
+}
+
+.page-header__navigation-item {
+  &:not(:first-child) {
+    margin-left: 40px;
+  }
+}
+
+.page-header__navigation-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.214;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--third-txt-color);
+  transition: color var(--delay) var(--time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+// .page-header__sign-button,
+.page-header__call-link{
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+
+  margin-left: auto;
+
+  @media screen and (min-width: 1280px) {
+    width: 336px;
+    height: 70px;
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.14em;
+  }
+}
+
+.page-header__menu-button {
+  align-self: center;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+  }
+
+  padding: 0;
+  width: 21px;
+  height: 21px;
+
+  color: var(--icons-main-color);
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  transition: color var(--delay) var(--time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:focus {
+    outline: 1px dotted var(--icons-main-color);
+  }
+}
+
+.page-header__menu-button-icon {
+  stroke: currentColor;
+}

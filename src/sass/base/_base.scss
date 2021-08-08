@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  padding-top: 70px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 120px;
+  }
+}
+
+// *:focus {
+//   outline-style: dotted;
+// }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*ПРОВЕРКА КАЧЕСТВА РАЗМЕТКИ*/
+// *,
+// div,
+// ul,
+// li,
+// h1,
+// h2,
+// h3,
+// p,
+// a,
+// // img,
+// section,
+// button,
+// form,
+// input,
+// svg {
+//   outline: 1px solid tomato;
+// }
+
+// section {
+//   overflow-x: hidden;
+// }
+main {
+  overflow-x: hidden;
+}

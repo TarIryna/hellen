@@ -1,0 +1,111 @@
+.advantages__list {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantages__item {
+  display: inline-flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.429;
+  letter-spacing: 0.08em;
+  color: var(--main-txt-color);
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
+}
+
+.advantages__item--icon-program::before {
+  content: '';
+
+  margin-right: 12px;
+  width: 59px;
+  height: 60px;
+
+  background-image: url('/images/advantages/program.svg');
+  background-size: cover;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: -19px;
+    width: 100px;
+    height: 102px;
+  }
+}
+
+.advantages__item--icon-method::before {
+  content: '';
+
+  margin-right: 12px;
+  width: 59px;
+  height: 60px;
+
+  background-image: url('/images/advantages/method.svg');
+  background-size: cover;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: -19px;
+    width: 100px;
+    height: 102px;
+  }
+}
+
+.advantages__item--icon-guarantee::before {
+  content: '';
+
+  margin-right: 12px;
+  width: 59px;
+  height: 60px;
+
+  background-image: url('/images/advantages/guarantee.svg');
+  background-size: cover;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: -19px;
+    width: 100px;
+    height: 102px;
+  }
+}
+
+.advantages__content {
+  width: 146px;
+
+  @media screen and (min-width: 1280px) {
+    width: 350px;
+  }
+}
+.advantages__content--width-method {
+  width: 142px;
+
+  @media screen and (min-width: 1280px) {
+    width: 260px;
+  }
+}
+.advantages__content--width-guarantee {
+  width: 139px;
+
+  @media screen and (min-width: 1280px) {
+    width: 270px;
+  }
+}

@@ -1,0 +1,328 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  min-width: 320px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 60px;
+    width: 1280px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    width: 1434px;
+  }
+}
+
+// header {
+//   padding: 30px 0;
+
+//   @media screen and (min-width: 768px) {
+//     padding: 40px 0;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     padding: 33px 0;
+//   }
+// }
+
+.section {
+  // background-color: var(--third-bg-color);
+  padding-top: 50px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+  }
+
+  &--hero {
+    padding: 20px 0 30px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 13px;
+      padding-bottom: 7px;
+    }
+  }
+
+  &--advantages {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 50px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 97px;
+      padding-bottom: 130px;
+    }
+  }
+
+  &--problems {
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 100px;
+      padding-bottom: 130px;
+    }
+  }
+
+  &--how-we-do {
+    padding-top: 0;
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 130px;
+    }
+  }
+
+  &--program {
+    background-color: var(--secondary-bg-color);
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 189px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 120px;
+      padding-bottom: 164px;
+    }
+  }
+
+  &--benefits {
+    padding-top: 0;
+    padding-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+      padding-bottom: 39px;
+    }
+  }
+
+  &--reviews {
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 130px;
+    }
+  }
+
+  &--contacts {
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 71px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 100px;
+      padding-bottom: 62px;
+    }
+  }
+}
+
+/* Логотип*/
+.logo {
+  // color: var(--accent-color);
+
+  animation: color-change 5s infinite;
+  transition: color var(--delay) var(--time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color-hovered);
+  }
+
+  .logo-mobile {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .logo-tablet {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 128px;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.logo-tablet__group {
+  display: flex;
+
+  &:last-child {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+  }
+}
+
+.logo-tablet__name-en {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.231;
+  letter-spacing: 0.04em;
+  color: var(--main-txt-color);
+
+  &:first-child {
+    margin-right: 4px;
+  }
+
+  &:last-child {
+    margin-left: 4px;
+  }
+}
+
+.logo-tablet-name-en--uppercase {
+  text-transform: uppercase;
+}
+
+.logo-tablet__name-ru {
+  display: inline;
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--main-txt-color);
+}
+
+.logo-tablet__name-ru--accent-color {
+  color: var(--accent-color);
+}
+
+.logo-mobile__icon,
+.logo-tablet__icon {
+  fill: currentColor;
+}
+
+@keyframes color-change {
+  0% {
+    color: rgba(255, 136, 0, 0.945);
+  }
+  20% {
+    color: rgba(255, 136, 0, 0.952);
+  }
+  40% {
+    color: rgba(255, 81, 0, 0.904);
+  }
+  60% {
+    color: var(--accent-color);
+  }
+  80% {
+    color: rgba(255, 81, 0, 0.904);
+  }
+  100% {
+    color: rgba(255, 136, 0, 0.952);
+  }
+}
+
+.wave-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100vw;
+  min-height: 665px;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    min-height: 605px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-height: 925px;
+  }
+
+  background-image: url('/images/hero/bg-img-wave-768x618.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  @media screen and (min-width: 768px) {
+    background-image: url('/images/hero/bg-img-wave-768x556.svg');
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('/images/hero/bg-img-wave-1688x878.svg');
+  }
+}
+
+/*Не удалять*/
+// body {
+//   background-image: url('/images/hero/bg-img-wave-768x618.svg');
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: center top;
+
+//   @media screen and (min-width: 768px) {
+//     background-image: url('/images/hero/bg-img-wave-768x556.svg');
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     background-image: url('/images/hero/bg-img-wave-1688x878.svg');
+//   }
+// }
+
+// footer {
+//   padding: 30px 0 21px;
+
+//   @media screen and (min-width: 768px) {
+//     padding-top: 40px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     padding-top: 52px;
+//   }
+// }
+
+// .sign-button
+.call-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 260px;
+  height: 48px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-color);
+
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  transition: color var(--delay) var(--time-function),
+    background-color var(--delay) var(--time-function);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-txt-color);
+    background-color: var(--accent-color);
+  }
+}
